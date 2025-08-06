@@ -1,0 +1,64 @@
+Role:
+You are an expert software tester and automation engineer specializing in Microsoft Playwright TypeScripttest automation, working with MCP server integration through the Roo Code agent plug-in.
+
+Context:
+Generate complete Playwright TypeScript code for a new test automation scenario in a file named 'WLMEUList.spec.ts' in Visual Studio Code using the Roo Code agent plug-in. The project will follow Playwright best practices with TypeScript configuration. The code generation exercise must leverage the Playwright MCP server capabilities for enhanced browser operations, element interactions, and debugging through the Roo Code agent plug-in integration during code generation, but must execute independently without requiring MCP server runtime connections. The code must be production-ready with comprehensive documentation, robust error handling, and resilience against UI changes through intelligent element detection strategies.
+
+MCP Server Integration Requirements (Code Generation Phase Only):
+Code Generation Phase: Initiate a connection to the Playwright MCP server and use the capabilities of the Playwright MCP server during the code generation session.
+Code Generation Phase: Before any UI operation, allow the Playwright MCP server to perform HTML structure analysis to generate robust selectors.
+Code Generation Phase: Use the Playwright MCP server through Roo Code agent to analyse and generate optimal test code structure.
+Code Generation Phase: Use the Playwright MCP server for syntax validation and error correction during code generation.
+Code Generation Phase: Connect to the sequentialthinking MCP server to repeat debugging steps as needed until there are no syntax errors in the test code (one user permission confirmation is sufficient for this session).
+Runtime Phase: Generated code must execute independently using standard Playwright APIs without MCP server dependencies
+
+
+
+
+Project Structure Requirements:
+Create New Test file: 'WLMEUList.spec.ts' located in 'tests/ui/WLM/Lists/' directory. This file is added as a new test into the existing Playwright project located in this Visual Studio Code IDE session.
+Identify UI element locators: Before any UI operation, connect to the the Playwright MCP server and analyse the page’s HTML structure with the Playwright MCP server to reduce false interactions with elements.
+Login code: Reuse the conventions for login and main menu navigation in the new test 'WLMEUList.spec.ts' already established in the existing test file 'WLMAgencyList.spec.ts'.
+Page Object Model: Connect to the Playwright MCP server capabilities to determine the appropriate page object files to create under appropriate sub-directories under the main /pages directory and that these files contain all element selectors.
+Credentials: Use values in constants file for URL access and verification of credentials.
+Verify Test: Once the code generation phase has completed, execute the 'WLMEUList.spec.ts' test to confirm test runs successfully.
+Terminal Window Interaction: This is a Windows laptop environment and syntax for any Terminal Window commands needs to reflect this environment.
+
+
+
+
+Test Implementation (execute in exact sequence using the code generation capabilities of the Playwright MCP server):
+
+1.Connect to the Playwright MCP server and navigate to NETREVEAL_URL from constants.
+2.Maximize browser window.
+3.Log into application.
+8.Identify and click the menu item for 'Watchlist Manager'.
+8.Identify and click the submenu item for 'Lists'.
+8.Identify and click the submenu item for 'Standard Lists'.
+11.Identify and click the 'EU List' hyperlink in the 'Lists' section on the page UI using robust element interaction.
+14.Assert that the 'eu_name' text is present and visible on the page in the section named 'Search Indexes', under a column named 'Index Name'.
+15.Generate test report output indicating success/failure.
+
+
+
+
+Technical Specifications:
+Reuse the code steps defined in the 'WLMAgencyList.spec.ts' for logging into the application.
+No hardcoded values in test files - all values from constants.ts or Page Object files.
+All element selectors stored in Page Object Model classes after identification by the Playwright MCP Server page analysis.
+Critical: No runtime dependencies on MCP server - all code must execute with standard Playwright installation
+Ensure that the code executes an actual assertion to indicate that the key test step has been successful.
+
+
+
+
+
+Output Requirements:
+Provide the complete project structure with all files for independent execution:
+
+1.tests/WLM/Lists/WLMEUList.spec.ts
+2.New page object file for StandardList screen under '\watchlistManager' directory.
+2.Any other required configuration updates.
+
+
+Ensure each test step is explicitly implemented in code as a result of responses returned during the code generation session using a connection to the Playwright MCP Server functions. The final code should be immediately executable in any standard Playwright environment without requiring MCP server runtime connections, while still benefiting from the Playwright MCP server intelligence during the code generation phase through the Roo Code agent plug-in.

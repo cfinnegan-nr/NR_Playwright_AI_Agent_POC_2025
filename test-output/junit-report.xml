@@ -1,0 +1,605 @@
+<testsuites id="" name="" tests="3" failures="1" skipped="0" errors="0" time="77.63787599999999">
+<testsuite name="ui\WLM\Lists\WLMEUList.spec.ts" timestamp="2025-08-06T19:46:06.190Z" hostname="chromium" tests="1" failures="0" skipped="0" time="39.674" errors="0">
+<testcase name="NetReveal Watchlist Manager EU List Tests › Verify eu_name is present in EU List" classname="ui\WLM\Lists\WLMEUList.spec.ts" time="39.674">
+<system-out>
+<![CDATA[Setting up test
+Test setup complete
+Using fallback selector: #forms-text-field-username
+Using MCP selector for "username field": #forms-text-field-username
+Using fallback selector: #forms-text-field-password
+Using MCP selector for "password field": #forms-text-field-password
+Using fallback selector: button:has-text("Login")
+Using MCP selector for "login button": button:has-text("Login")
+Using fallback selector: text="error message"
+Using MCP selector for "error message": text="error message"
+LoginPage initialized with selectors:
+Using fallback selector: #forms-text-field-username
+Using MCP selector for "username field": #forms-text-field-username
+- Username: #forms-text-field-username
+Using fallback selector: #forms-text-field-password
+Using MCP selector for "password field": #forms-text-field-password
+- Password: #forms-text-field-password
+Using fallback selector: button:has-text("Login")
+Using MCP selector for "login button": button:has-text("Login")
+- Login button: button:has-text("Login")
+Searching for selector with description: "watchlist manager menu"
+Using fallback selector: #home_watchlistmanagement
+Using MCP selector for "watchlist manager menu": #home_watchlistmanagement
+Searching for selector with description: "synonyms menu"
+Using fallback selector: text="synonyms menu"
+Using MCP selector for "synonyms menu": text="synonyms menu"
+Searching for selector with description: "synonyms rules manager menu"
+Using fallback selector: text="synonyms rules manager menu"
+Using MCP selector for "synonyms rules manager menu": text="synonyms rules manager menu"
+Searching for selector with description: "eu list"
+Using fallback selector: text=EU List
+Using MCP selector for "eu list": text=EU List
+Searching for selector with description: "name column header"
+Using fallback selector: text="name column header"
+Using MCP selector for "name column header": text="name column header"
+Searching for selector with description: "sort icon"
+Using fallback selector: text="sort icon"
+Using MCP selector for "sort icon": text="sort icon"
+Searching for selector with description: "weighted words rule set"
+Using fallback selector: text="weighted words rule set"
+Using MCP selector for "weighted words rule set": text="weighted words rule set"
+Searching for selector with description: "agency rule"
+Using fallback selector: text="agency rule"
+Using MCP selector for "agency rule": text="agency rule"
+WatchlistManagerPage initialized with MCP selectors:
+Searching for selector with description: "main menu"
+Using fallback selector: #menu-trigger
+Using MCP selector for "main menu": #menu-trigger
+- Main menu: #menu-trigger
+Searching for selector with description: "watchlist manager menu"
+Using fallback selector: #home_watchlistmanagement
+Using MCP selector for "watchlist manager menu": #home_watchlistmanagement
+- Watchlist Manager menu: #home_watchlistmanagement
+Searching for selector with description: "agency rule"
+Using fallback selector: text="agency rule"
+Using MCP selector for "agency rule": text="agency rule"
+- Agency rule: text="agency rule"
+- Lists menu: //*[@id="home_watchlistmanagement_home_watchlistmanagement_lists"]
+- Standard Lists menu: //*[@id="home_watchlistmanagement_home_watchlistmanagement_lists_home_watchlistmanagement_lists_standard"]
+Searching for selector with description: "eu list"
+Using fallback selector: text=EU List
+Using MCP selector for "eu list": text=EU List
+- EU List: text=EU List
+Using fallback selector: #menu-trigger
+Using MCP selector for "main menu": #menu-trigger
+Using fallback selector: #home_watchlistmanagement
+Using MCP selector for "watchlist manager menu": #home_watchlistmanagement
+Using fallback selector: #home_watchlistmanagement_home_watchlistmanagement_lists
+Using MCP selector for "lists menu": #home_watchlistmanagement_home_watchlistmanagement_lists
+Using fallback selector: [id*="standard_lists"]
+Using MCP selector for "standard lists menu": [id*="standard_lists"]
+Using fallback selector: text=EU List
+Using MCP selector for "eu list": text=EU List
+Using fallback selector: text=eu_name
+Using MCP selector for "eu_name": text=eu_name
+StandardListPage initialized with MCP selectors:
+Using fallback selector: #menu-trigger
+Using MCP selector for "main menu": #menu-trigger
+- Main menu: #menu-trigger
+Using fallback selector: #home_watchlistmanagement
+Using MCP selector for "watchlist manager menu": #home_watchlistmanagement
+- Watchlist Manager menu: #home_watchlistmanagement
+Using fallback selector: text=EU List
+Using MCP selector for "eu list": text=EU List
+- EU List link: text=EU List
+Test started: Navigating to NetReveal application
+Navigating to login page: https://10.222.2.239:8443/netreveal/login.do
+BROWSER CONSOLE [verbose]: [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o
+Successfully navigated to URL
+Page title: APPS Automation
+Found 5 input elements
+Button text: Login
+Checking for username input field visibility...
+Login page loaded successfully - username field found
+Analyzing login page using Playwright MCP Server...
+MCP Server not connected. Attempting to connect...
+Successfully connected to Playwright MCP Server
+Capturing page snapshot with Playwright MCP...
+Attempting to connect to Playwright MCP server...
+MCP server connection successful
+MCP snapshot captured successfully for: APPS Automation
+Elements analyzed: 30
+MCP snapshot captured for: APPS Automation
+Current URL: https://10.222.2.239:8443/netreveal/login.do
+Snapshot elements captured: Yes
+login page analysis completed
+Login page analysis completed, snapshot available: [33mtrue[39m
+Logging in to NetReveal application
+Username 'admin' entered
+Password entered
+Login button clicked
+Login successful
+Checking if user is logged in...
+Looking for robust selector for: "watchlist manager menu"
+Using fallback selector: #home_watchlistmanagement
+Found Watchlist Manager with MCP selector: #home_watchlistmanagement
+Looking for robust selector for: "menu button"
+Using fallback selector: text="menu button"
+Found Menu button with selector: a:has-text("Menu")
+Looking for robust selector for: "main navigation"
+Using fallback selector: text="main navigation"
+Found navigation with selector: nav
+Login indicators found: {
+  hasWatchlistMenu: [33mtrue[39m,
+  hasMenuButton: [33mtrue[39m,
+  hasMainNavigation: [33mtrue[39m,
+  isMockDashboard: [33mfalse[39m,
+  isMockMode: [33mfalse[39m
+}
+Is user logged in: [33mtrue[39m
+Login successful
+Analyzing authenticated dashboard using Playwright MCP Server...
+Capturing page snapshot with Playwright MCP...
+Attempting to connect to Playwright MCP server...
+MCP server connection successful
+MCP snapshot captured successfully for: EVALUATION - APPS Automation
+Elements analyzed: 797
+MCP snapshot captured for: EVALUATION - APPS Automation
+Current URL: https://10.222.2.239:8443/netreveal/loginPerform.do
+Snapshot elements captured: Yes
+authenticated dashboard analysis completed
+Dashboard analysis completed, snapshot available: [33mtrue[39m
+Starting navigation to EU List
+Analyzing pre-navigation state using Playwright MCP Server...
+Capturing page snapshot with Playwright MCP...
+Attempting to connect to Playwright MCP server...
+MCP server connection successful
+MCP snapshot captured successfully for: EVALUATION - APPS Automation
+Elements analyzed: 797
+MCP snapshot captured for: EVALUATION - APPS Automation
+Current URL: https://10.222.2.239:8443/netreveal/loginPerform.do
+Snapshot elements captured: Yes
+pre-navigation state analysis completed
+Pre-navigation analysis completed, snapshot available: [33mtrue[39m
+Starting navigation sequence to EU List using proper menu navigation...
+Checking if running in mock mode
+Detected actual application URL, assuming NOT in mock mode
+Step 1: Opening main menu
+Clicking main menu button using exact XPath: //*[@id="menu-trigger"]
+Main menu button clicked using exact XPath: //*[@id="menu-trigger"]
+Step 2: Navigating to Watchlist Manager
+Navigating to Watchlist Manager
+Navigated to Watchlist Manager
+Step 3: Navigating to Lists
+Navigating to Lists using exact XPath: //*[@id="home_watchlistmanagement_home_watchlistmanagement_lists"]
+Checking if running in mock mode
+Detected actual application URL, assuming NOT in mock mode
+Navigated to Lists using exact XPath
+Step 4: Navigating to Standard Lists
+Navigating to Standard Lists using exact XPath: //*[@id="home_watchlistmanagement_home_watchlistmanagement_lists_home_watchlistmanagement_lists_standard"]
+Checking if running in mock mode
+Detected actual application URL, assuming NOT in mock mode
+Navigated to Standard Lists in normal mode
+Step 5: Navigating to EU List
+Navigating to EU List
+Checking if running in mock mode
+Detected actual application URL, assuming NOT in mock mode
+Navigated to EU List
+Navigation sequence to EU List completed successfully (without assertion)
+Performing final assertion: Verifying eu_name visibility
+Asserting 'eu_name' is present
+Checking if running in mock mode
+Detected actual application URL, assuming NOT in mock mode
+Using text selector for eu_name in normal mode
+Looking for eu_name with selector: text=eu_name
+Assertion passed: 'eu_name' is present and visible
+Test completed successfully: eu_name is present in EU List
+Cleaning up after test
+User is logged in, attempting to log out gracefully
+Standard logout link not found, trying alternatives
+Test cleanup complete
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="ui\WLM\Synonyms\WLMAgencyList-FailureTest.spec.ts" timestamp="2025-08-06T19:46:06.190Z" hostname="chromium" tests="1" failures="1" skipped="0" time="17.045" errors="0">
+<testcase name="NetReveal Watchlist Manager Agency List Tests - Enhanced Error Demo › Demonstrate enhanced error messaging for incorrect element selection" classname="ui\WLM\Synonyms\WLMAgencyList-FailureTest.spec.ts" time="17.045">
+<properties>
+<property name="issue" value="Intentional failure for demonstration purposes">
+</property>
+</properties>
+<failure message="WLMAgencyList-FailureTest.spec.ts:448:7 Demonstrate enhanced error messaging for incorrect element selection" type="FAILURE">
+<![CDATA[  [chromium] › ui\WLM\Synonyms\WLMAgencyList-FailureTest.spec.ts:448:7 › NetReveal Watchlist Manager Agency List Tests - Enhanced Error Demo › Demonstrate enhanced error messaging for incorrect element selection 
+
+    Error: DEMONSTRATION TEST - EXPECTED FAILURE: Enhanced error reporting demonstration
+
+      504 |       
+      505 |       // Re-throw a properly formatted error that's expected and won't cause syntax issues
+    > 506 |       throw new Error('DEMONSTRATION TEST - EXPECTED FAILURE: Enhanced error reporting demonstration');
+          |             ^
+      507 |     }
+      508 |   });
+      509 |
+        at C:\Sensa_NR\2025\QA\GenAI\GitHub Agent\Roo_Playwright\NR\tests\ui\WLM\Synonyms\WLMAgencyList-FailureTest.spec.ts:506:13
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\ui-WLM-Synonyms-WLMAgencyL-1cda8-incorrect-element-selection-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\ui-WLM-Synonyms-WLMAgencyL-1cda8-incorrect-element-selection-chromium\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[====== DEMONSTRATION TEST: EXPECTED TO FAIL ======
+This test intentionally uses an incorrect selector to demonstrate enhanced error messaging
+Test setup started
+Test setup completed
+NOTE: This test is DESIGNED TO FAIL with a logical failure (not syntax error)
+Using fallback selector: #forms-text-field-username
+Using MCP selector for "username field": #forms-text-field-username
+Using fallback selector: #forms-text-field-password
+Using MCP selector for "password field": #forms-text-field-password
+Using fallback selector: button:has-text("Login")
+Using MCP selector for "login button": button:has-text("Login")
+Using fallback selector: text="error message"
+Using MCP selector for "error message": text="error message"
+LoginPage initialized with selectors:
+Using fallback selector: #forms-text-field-username
+Using MCP selector for "username field": #forms-text-field-username
+- Username: #forms-text-field-username
+Using fallback selector: #forms-text-field-password
+Using MCP selector for "password field": #forms-text-field-password
+- Password: #forms-text-field-password
+Using fallback selector: button:has-text("Login")
+Using MCP selector for "login button": button:has-text("Login")
+- Login button: button:has-text("Login")
+Searching for selector with description: "watchlist manager menu"
+Using fallback selector: #home_watchlistmanagement
+Using MCP selector for "watchlist manager menu": #home_watchlistmanagement
+Searching for selector with description: "synonyms menu"
+Using fallback selector: #home_watchlistmanagement_menu-item_synonyms_path
+Using MCP selector for "synonyms menu": #home_watchlistmanagement_menu-item_synonyms_path
+Searching for selector with description: "synonyms rules manager menu"
+Using fallback selector: #home_watchlistmanagement_menu-item_synonyms_path_menu-item_synonym_rules_manager_path
+Using MCP selector for "synonyms rules manager menu": #home_watchlistmanagement_menu-item_synonyms_path_menu-item_synonym_rules_manager_path
+Searching for selector with description: "eu list"
+Using fallback selector: text="eu list"
+Using MCP selector for "eu list": text="eu list"
+Searching for selector with description: "name column header"
+Using fallback selector: text="name column header"
+Using MCP selector for "name column header": text="name column header"
+Searching for selector with description: "sort icon"
+Using fallback selector: text="sort icon"
+Using MCP selector for "sort icon": text="sort icon"
+Searching for selector with description: "weighted words rule set"
+Using fallback selector: a:has-text("Weighted words rule set")
+Using MCP selector for "weighted words rule set": a:has-text("Weighted words rule set")
+Searching for selector with description: "agency rule"
+Using fallback selector: a:has-text("administrative rule")
+Using MCP selector for "agency rule": a:has-text("administrative rule")
+WatchlistManagerPage initialized with MCP selectors:
+Searching for selector with description: "main menu"
+Using fallback selector: #menu-trigger
+Using MCP selector for "main menu": #menu-trigger
+- Main menu: #menu-trigger
+Searching for selector with description: "watchlist manager menu"
+Using fallback selector: #home_watchlistmanagement
+Using MCP selector for "watchlist manager menu": #home_watchlistmanagement
+- Watchlist Manager menu: #home_watchlistmanagement
+Searching for selector with description: "agency rule"
+Using fallback selector: a:has-text("administrative rule")
+Using MCP selector for "agency rule": a:has-text("administrative rule")
+- Agency rule: a:has-text("administrative rule")
+- Lists menu: //*[@id="home_watchlistmanagement_home_watchlistmanagement_lists"]
+- Standard Lists menu: //*[@id="home_watchlistmanagement_home_watchlistmanagement_lists_home_watchlistmanagement_lists_standard"]
+Searching for selector with description: "eu list"
+Using fallback selector: text="eu list"
+Using MCP selector for "eu list": text="eu list"
+- EU List: text="eu list"
+====== DEMONSTRATION TEST: EXPECTED TO FAIL ======
+This test intentionally uses incorrect selector to demonstrate enhanced error messaging
+Test started: Navigating to NetReveal application
+Navigating to login page: https://10.222.2.239:8443/netreveal/login.do
+Successfully navigated to URL
+Page title: APPS Automation
+Found 5 input elements
+Button text: Login
+Checking for username input field visibility...
+Login page loaded successfully - username field found
+Logging in to NetReveal application
+Username 'admin' entered
+Password entered
+Login button clicked
+Login successful
+Checking if user is logged in...
+Using fallback selector: #home_watchlistmanagement
+Found Watchlist Manager with MCP selector: #home_watchlistmanagement
+Using fallback selector: text="menu button"
+Found Menu button with selector: a:has-text("Menu")
+Using fallback selector: text="main navigation"
+Found navigation with selector: nav
+Login indicators found: {
+  hasWatchlistMenu: [33mtrue[39m,
+  hasMenuButton: [33mtrue[39m,
+  hasMainNavigation: [33mtrue[39m,
+  isMockDashboard: [33mfalse[39m,
+  isMockMode: [33mfalse[39m
+}
+Is user logged in: [33mtrue[39m
+Login successful
+Starting navigation to Synonym Rules Manager
+Starting navigation sequence using proper menu navigation...
+Step 1: Opening main menu
+Clicking main menu button using exact XPath: //*[@id="menu-trigger"]
+Main menu button clicked using exact XPath: //*[@id="menu-trigger"]
+Step 2: Navigating to Watchlist Manager
+Navigating to Watchlist Manager
+Navigated to Watchlist Manager
+Step 3: Navigating to Synonyms
+Navigating to Synonyms
+Navigated to Synonyms
+Step 4: Navigating to Synonyms Rules Manager
+Navigating to Synonyms Rules Manager
+Navigated to Synonyms Rules Manager
+Step 5: Sorting name column if needed
+Checking if rule set is visible
+Rule set not visible, sorting Name column using XPath: //*[@id="SYSWLMPP_Synonym_RS_List_sort0"]
+Name column sorted if needed
+Step 6: Clicking on weighted words rule set
+Clicking 'Weighted words rule set' link
+Clicked 'Weighted words rule set' link
+Navigation sequence completed successfully (without assertion)
+Performing final assertion: Looking for wrong element to demonstrate error messaging
+DEMONSTRATION TEST: Starting enhanced agency rule assertion...
+This assertion is designed to fail with detailed error messaging
+Using fallback selector: a:has-text("administrative rule")
+Using selector: a:has-text("administrative rule")
+Found 1 matching elements for agency rule (exists: true)
+Checking element visibility with retry logic...
+Agency rule is visible - assertion passed
+
+[42m[30m ✅ TEST BEHAVIOR WORKING AS DESIGNED: EXPECTED DEMONSTRATION FAILURE ✅ [0m
+[36m╔════════════════════════════════════════════════════════════════════╗[0m
+[36m║                       ERROR MESSAGE DETAILS                        ║[0m
+[36m╚════════════════════════════════════════════════════════════════════╝[0m
+
+[43m[30m                ERROR REPORT: TEXT CONTENT MISMATCH                [0m
+[1m[33m╔════════════════════════════════════════════════════════════════════╗[0m
+[1m[33m║[0m 🔍 [1m[33mERROR DETAILS:[0m Element text content mismatch               [1m[33m║[0m
+[1m[33m╚════════════════════════════════════════════════════════════════════╝[0m
+[36m═════════════════════════ COMPARISON DETAILS ════════════════════════[0m
+[1m[31m❌ Expected text to contain:[0m "agency rule"
+[1m[32m✅ Actual text content:[0m "administrative rule"
+[1m🎯 Selector used:[0m a:has-text("administrative rule")
+[33m═════════════════════════════ ANALYSIS ══════════════════════════════[0m
+[1m[33m💡 POSSIBLE CAUSES:[0m
+[33m➊[0m The wrong element was selected
+[33m➋[0m The element text has changed
+[33m➌[0m [1mDEMONSTRATION TEST:[0m Using intentionally incorrect text match
+[32m══════════════════════════ RESOLUTION STEPS ═════════════════════════[0m
+[1m[32m🔧 TROUBLESHOOTING STEPS:[0m
+[32m➊[0m Update expected text or selector
+[32m➋[0m Check if element text is loaded dynamically
+[32m➌[0m Use a partial text match if appropriate
+[32m➍[0m For this demonstration test, update selector in getMcpSelector function
+[43m[30m                      END OF ERROR REPORT                       [0m
+
+[36m════════════════════════════════════════════════════════════════════════[0m
+[36m╔════════════════════════════════════════════════════════════════════╗[0m
+[36m║                        TEST CLEANUP STARTED                        ║[0m
+[36m╚════════════════════════════════════════════════════════════════════╝[0m
+[44m[37m              DEMONSTRATION TEST COMPLETED                    [0m
+[1m[33mNOTE: The failure was INTENTIONAL and demonstrates enhanced error reporting[0m
+[33mThis test shows how to provide detailed error diagnostics for faster debugging[0m
+[36m════════════════════════════════════════════════════════════════════════[0m
+
+[[ATTACHMENT|..\test-results\ui-WLM-Synonyms-WLMAgencyL-1cda8-incorrect-element-selection-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\ui-WLM-Synonyms-WLMAgencyL-1cda8-incorrect-element-selection-chromium\error-context.md]]
+]]>
+</system-out>
+<system-err>
+<![CDATA[Enhanced agency rule assertion failed:
+Error: 
+[43m[30m                ERROR REPORT: TEXT CONTENT MISMATCH                [0m
+[1m[33m╔════════════════════════════════════════════════════════════════════╗[0m
+[1m[33m║[0m 🔍 [1m[33mERROR DETAILS:[0m Element text content mismatch               [1m[33m║[0m
+[1m[33m╚════════════════════════════════════════════════════════════════════╝[0m
+[36m═════════════════════════ COMPARISON DETAILS ════════════════════════[0m
+[1m[31m❌ Expected text to contain:[0m "agency rule"
+[1m[32m✅ Actual text content:[0m "administrative rule"
+[1m🎯 Selector used:[0m a:has-text("administrative rule")
+[33m═════════════════════════════ ANALYSIS ══════════════════════════════[0m
+[1m[33m💡 POSSIBLE CAUSES:[0m
+[33m➊[0m The wrong element was selected
+[33m➋[0m The element text has changed
+[33m➌[0m [1mDEMONSTRATION TEST:[0m Using intentionally incorrect text match
+[32m══════════════════════════ RESOLUTION STEPS ═════════════════════════[0m
+[1m[32m🔧 TROUBLESHOOTING STEPS:[0m
+[32m➊[0m Update expected text or selector
+[32m➋[0m Check if element text is loaded dynamically
+[32m➌[0m Use a partial text match if appropriate
+[32m➍[0m For this demonstration test, update selector in getMcpSelector function
+[43m[30m                      END OF ERROR REPORT                       [0m
+
+    at performEnhancedAgencyRuleAssertion [90m(C:\Sensa_NR\2025\QA\GenAI\GitHub Agent\Roo_Playwright\NR\[39mtests\ui\WLM\Synonyms\WLMAgencyList-FailureTest.spec.ts:416:13[90m)[39m
+    at [90mC:\Sensa_NR\2025\QA\GenAI\GitHub Agent\Roo_Playwright\NR\[39mtests\ui\WLM\Synonyms\WLMAgencyList-FailureTest.spec.ts:484:7
+    at [90mC:\Sensa_NR\2025\QA\GenAI\GitHub Agent\Roo_Playwright\NR\[39mnode_modules\[4mplaywright[24m\lib\worker\workerMain.js:304:9
+    at [90mC:\Sensa_NR\2025\QA\GenAI\GitHub Agent\Roo_Playwright\NR\[39mnode_modules\[4mplaywright[24m\lib\worker\testInfo.js:289:11
+    at TimeoutManager.withRunnable [90m(C:\Sensa_NR\2025\QA\GenAI\GitHub Agent\Roo_Playwright\NR\[39mnode_modules\[4mplaywright[24m\lib\worker\timeoutManager.js:67:14[90m)[39m
+    at TestInfoImpl._runWithTimeout [90m(C:\Sensa_NR\2025\QA\GenAI\GitHub Agent\Roo_Playwright\NR\[39mnode_modules\[4mplaywright[24m\lib\worker\testInfo.js:287:7[90m)[39m
+    at [90mC:\Sensa_NR\2025\QA\GenAI\GitHub Agent\Roo_Playwright\NR\[39mnode_modules\[4mplaywright[24m\lib\worker\workerMain.js:302:7
+    at WorkerMain._runTest [90m(C:\Sensa_NR\2025\QA\GenAI\GitHub Agent\Roo_Playwright\NR\[39mnode_modules\[4mplaywright[24m\lib\worker\workerMain.js:277:5[90m)[39m
+    at WorkerMain.runTestGroup [90m(C:\Sensa_NR\2025\QA\GenAI\GitHub Agent\Roo_Playwright\NR\[39mnode_modules\[4mplaywright[24m\lib\worker\workerMain.js:193:11[90m)[39m
+    at process.<anonymous> [90m(C:\Sensa_NR\2025\QA\GenAI\GitHub Agent\Roo_Playwright\NR\[39mnode_modules\[4mplaywright[24m\lib\common\process.js:65:22[90m)[39m
+]]>
+</system-err>
+</testcase>
+</testsuite>
+<testsuite name="ui\WLM\Synonyms\WLMAgencyList.spec.ts" timestamp="2025-08-06T19:46:06.190Z" hostname="chromium" tests="1" failures="0" skipped="0" time="17.937" errors="0">
+<testcase name="NetReveal Watchlist Manager Agency List Tests › Verify agency rule is present in Weighted words rule set" classname="ui\WLM\Synonyms\WLMAgencyList.spec.ts" time="17.937">
+<system-out>
+<![CDATA[Test setup started
+Connecting to Playwright MCP Server...
+Checking MCP server availability...
+MCP Server check passed
+Successfully connected to Playwright MCP Server
+Test setup completed
+Using fallback selector: #forms-text-field-username
+Using MCP selector for "username field": #forms-text-field-username
+Using fallback selector: #forms-text-field-password
+Using MCP selector for "password field": #forms-text-field-password
+Using fallback selector: button:has-text("Login")
+Using MCP selector for "login button": button:has-text("Login")
+Using fallback selector: text="error message"
+Using MCP selector for "error message": text="error message"
+LoginPage initialized with selectors:
+Using fallback selector: #forms-text-field-username
+Using MCP selector for "username field": #forms-text-field-username
+- Username: #forms-text-field-username
+Using fallback selector: #forms-text-field-password
+Using MCP selector for "password field": #forms-text-field-password
+- Password: #forms-text-field-password
+Using fallback selector: button:has-text("Login")
+Using MCP selector for "login button": button:has-text("Login")
+- Login button: button:has-text("Login")
+Searching for selector with description: "watchlist manager menu"
+Using fallback selector: #home_watchlistmanagement
+Using MCP selector for "watchlist manager menu": #home_watchlistmanagement
+Searching for selector with description: "synonyms menu"
+Using fallback selector: #home_watchlistmanagement_menu-item_synonyms_path
+Using MCP selector for "synonyms menu": #home_watchlistmanagement_menu-item_synonyms_path
+Searching for selector with description: "synonyms rules manager menu"
+Using fallback selector: #home_watchlistmanagement_menu-item_synonyms_path_menu-item_synonym_rules_manager_path
+Using MCP selector for "synonyms rules manager menu": #home_watchlistmanagement_menu-item_synonyms_path_menu-item_synonym_rules_manager_path
+Searching for selector with description: "eu list"
+Using fallback selector: text="eu list"
+Using MCP selector for "eu list": text="eu list"
+Searching for selector with description: "name column header"
+Using fallback selector: text="name column header"
+Using MCP selector for "name column header": text="name column header"
+Searching for selector with description: "sort icon"
+Using fallback selector: text="sort icon"
+Using MCP selector for "sort icon": text="sort icon"
+Searching for selector with description: "weighted words rule set"
+Using fallback selector: a:has-text("Weighted words rule set")
+Using MCP selector for "weighted words rule set": a:has-text("Weighted words rule set")
+Searching for selector with description: "agency rule"
+Using fallback selector: a:has-text("agency rule")
+Using MCP selector for "agency rule": a:has-text("agency rule")
+WatchlistManagerPage initialized with MCP selectors:
+Searching for selector with description: "main menu"
+Using fallback selector: #menu-trigger
+Using MCP selector for "main menu": #menu-trigger
+- Main menu: #menu-trigger
+Searching for selector with description: "watchlist manager menu"
+Using fallback selector: #home_watchlistmanagement
+Using MCP selector for "watchlist manager menu": #home_watchlistmanagement
+- Watchlist Manager menu: #home_watchlistmanagement
+Searching for selector with description: "agency rule"
+Using fallback selector: a:has-text("agency rule")
+Using MCP selector for "agency rule": a:has-text("agency rule")
+- Agency rule: a:has-text("agency rule")
+- Lists menu: //*[@id="home_watchlistmanagement_home_watchlistmanagement_lists"]
+- Standard Lists menu: //*[@id="home_watchlistmanagement_home_watchlistmanagement_lists_home_watchlistmanagement_lists_standard"]
+Searching for selector with description: "eu list"
+Using fallback selector: text="eu list"
+Using MCP selector for "eu list": text="eu list"
+- EU List: text="eu list"
+Test started: Navigating to NetReveal application
+Navigating to login page: https://10.222.2.239:8443/netreveal/login.do
+Successfully navigated to URL
+Page title: APPS Automation
+Found 5 input elements
+Button text: Login
+Checking for username input field visibility...
+Login page loaded successfully - username field found
+Analyzing login page using Playwright MCP Server...
+Capturing page snapshot with Playwright MCP...
+MCP snapshot captured successfully for: APPS Automation
+Elements analyzed: 30
+MCP snapshot captured for: APPS Automation
+Current URL: https://10.222.2.239:8443/netreveal/login.do
+Snapshot elements captured: Yes
+login page analysis completed
+Login page analysis completed, snapshot available: [33mtrue[39m
+Logging in to NetReveal application
+Username 'admin' entered
+Password entered
+Login button clicked
+Login successful
+Checking if user is logged in...
+Looking for robust selector for: "watchlist manager menu"
+Using fallback selector: #home_watchlistmanagement
+Found Watchlist Manager with MCP selector: #home_watchlistmanagement
+Looking for robust selector for: "menu button"
+Using fallback selector: text="menu button"
+Found Menu button with selector: a:has-text("Menu")
+Looking for robust selector for: "main navigation"
+Using fallback selector: text="main navigation"
+Found navigation with selector: nav
+Login indicators found: {
+  hasWatchlistMenu: [33mtrue[39m,
+  hasMenuButton: [33mtrue[39m,
+  hasMainNavigation: [33mtrue[39m,
+  isMockDashboard: [33mfalse[39m,
+  isMockMode: [33mfalse[39m
+}
+Is user logged in: [33mtrue[39m
+Login successful
+Analyzing authenticated dashboard using Playwright MCP Server...
+Capturing page snapshot with Playwright MCP...
+MCP snapshot captured successfully for: EVALUATION - APPS Automation
+Elements analyzed: 797
+MCP snapshot captured for: EVALUATION - APPS Automation
+Current URL: https://10.222.2.239:8443/netreveal/loginPerform.do
+Snapshot elements captured: Yes
+authenticated dashboard analysis completed
+Dashboard analysis completed, snapshot available: [33mtrue[39m
+Starting navigation to Synonym Rules Manager
+Analyzing pre-navigation state using Playwright MCP Server...
+Capturing page snapshot with Playwright MCP...
+MCP snapshot captured successfully for: EVALUATION - APPS Automation
+Elements analyzed: 797
+MCP snapshot captured for: EVALUATION - APPS Automation
+Current URL: https://10.222.2.239:8443/netreveal/loginPerform.do
+Snapshot elements captured: Yes
+pre-navigation state analysis completed
+Pre-navigation analysis completed, snapshot available: [33mtrue[39m
+Starting navigation sequence using proper menu navigation...
+Step 1: Opening main menu
+Clicking main menu button using exact XPath: //*[@id="menu-trigger"]
+Main menu button clicked using exact XPath: //*[@id="menu-trigger"]
+Step 2: Navigating to Watchlist Manager
+Navigating to Watchlist Manager
+Navigated to Watchlist Manager
+Step 3: Navigating to Synonyms
+Navigating to Synonyms
+Navigated to Synonyms
+Step 4: Navigating to Synonyms Rules Manager
+Navigating to Synonyms Rules Manager
+Navigated to Synonyms Rules Manager
+Step 5: Sorting name column if needed
+Checking if rule set is visible
+Rule set not visible, sorting Name column using XPath: //*[@id="SYSWLMPP_Synonym_RS_List_sort0"]
+Name column sorted if needed
+Step 6: Clicking on weighted words rule set
+Clicking 'Weighted words rule set' link
+Clicked 'Weighted words rule set' link
+Navigation sequence completed successfully (without assertion)
+Performing final assertion: Verifying agency rule visibility
+Starting enhanced agency rule assertion...
+Looking for robust selector for: "agency rule"
+Using fallback selector: a:has-text("agency rule")
+Using selector: a:has-text("agency rule")
+Found 1 matching elements for agency rule (exists: true)
+Checking element visibility with retry logic...
+Agency rule is visible - assertion passed
+Enhanced assertion completed successfully
+✓ Agency rule element is visible and contains expected text: "agency rule"
+Test completed successfully: Agency rule is present in Weighted words rule set
+Test cleanup started
+Looking for robust selector for: "logout button"
+Using fallback selector: text="logout button"
+Using selector for logout button: text="logout button"
+Test cleanup completed
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

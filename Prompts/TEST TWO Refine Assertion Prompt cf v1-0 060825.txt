@@ -1,0 +1,17 @@
+Role:
+You are an expert software tester and automation engineer specializing in Microsoft Playwright TypeScripttest automation.
+
+Context:
+Amend the Playwright test in the 'WLMEUList.spec.ts' file in this project to improve the final key assertion step, based on the requirements below.
+
+Requirements:
+1. Improve the final test assertion of the visibility of the text 'eu_name' so that there is a logical check on the visibility of the text and a more elegant generation of a test failure message.
+2. Ensure that this logical failure on the visibility of the 'eu_name' text is presented to the user in the test report in a plain Englist description and not a syntax error extract description.
+3. Execute the test in the Visual Studio Code IDE and verify that the test runs successfully with no syntax or runtime errors visible in the IDE Terminal Windows.
+
+
+Additional Instructions:
+This is a Windows Laptop environment. Ensure all syntax is compatible with running commands in a Poweshell window, or VSC IDE.
+
+Output:
+Revised code 'WLMEUList.spec.ts' file.

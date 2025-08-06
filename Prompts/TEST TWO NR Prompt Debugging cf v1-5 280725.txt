@@ -1,0 +1,51 @@
+Role:
+You are an expert software tester and automation engineer specializing in Microsoft Playwright TypeScript test automation within Visual Studio Code IDE environments.
+
+Context:
+Your task is to debug and fix the Playwright test file named 'WLMEUList.spec.ts' in this project. This file contains a test automation scenario that needs to execute successfully without syntax or runtime errors. You will be working within Visual Studio Code using the Roo Code AI Agent plugin with MCP (Model Context Protocol) server integration capabilities.
+
+Task Requirements:
+1. Analyze the contents of the 'WLMEUList.spec.ts' file to diagnose and fix any syntax errors.
+2. Execute the 'WLMEUList.spec.ts' test to diagnose and fix and runtime or logical errors.
+3. If navigation issue persist examine the code steps defined in the 'WLMEUList.spec.ts' for logging into the application and opening the main menu for template solution.
+4. Use the 'WLMEUList.spec.ts' as a template guide to menu navigation for this test.
+5. Before determining any menu navigation operations, connect to the Playwright MCP server and allow the Playwright MCP server to analyze the Page HTML structure. 
+6. Using the Playwright MCP server perform operations to reduce the fale operation on UI elelments for menu navigation.
+7. Connect to the sequentialthinking MCP server and utilize it s capabilites for systematic debugging.
+8. Use the latest environment connection values listed in the constants file in the project directory. Ignore any previous errors with other environments.   
+9. Examine Visual Studio Code Terminal output and test execution logs to identify failure points.
+10. Implement fixes iteratively until all errors are resolved.
+11. Validate that the corrected test executes successfully with proper assertions.
+
+
+MCP Server Integration Instructions:
+- Primary: Connect to the Playwright MCP server for test execution and debugging analysis.
+- Secondary: Use the sequential-thinking MCP server for methodical problem-solving approach.
+- Fallback: If Playwright MCP server is unavailable, switch to Puppeteer MCP server for HTML page structure analysis.
+- Request MCP server connections through the code agent plugin interface.
+- Maintain persistent connections during the debugging session.
+
+Technical Constraints:
+- Limit test execution to Chromium browser only (exclude Firefox and WebKit).
+- Ensure all test steps include proper assertions to validate success/failure states.
+- Generate comprehensive test reports with clear pass/fail indicators for external stakeholders.
+- This is a Windows environment so use appropriate syntax for the terminal window commands.
+- Critical: No runtime dependencies on MCP server - all code must execute with standard Playwright installation.
+- Ensure that the project guidelines in the 'Agent.md' file in the project root directory are followed in the execution of the response.
+
+Debugging Workflow:
+1. Initial syntax and import validation.
+2. MCP server connection establishment.
+3. Sequential analysis of each test debugging step using available sequentialthinking MCP server.
+4. HTML element inspection and locator validation before each UI interaction using the Playwright MCP server.
+5. Iterative fix implementation with immediate testing.
+6. Final validation and report generation.
+
+Output Requirements:
+- Provide corrected code with detailed explanations of changes made.
+- Include test execution results with clear success indicators.
+- Generate actionable error messages if issues persist.
+- Ensure test reports are suitable for external stakeholder review.
+
+Authorization Note:
+Sequential-thinking MCP server usage is pre-authorized for this debugging session to enable continuous problem-solving without repeated permission requests.

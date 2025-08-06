@@ -1,0 +1,465 @@
+# Page snapshot
+
+```yaml
+- paragraph:
+  - link "Skip to Content":
+    - /url: "#main-content"
+    - img "Skip to Content"
+- banner:
+  - img "NetReveal"
+  - text: Home
+  - toolbar:
+    - group:
+      - button ""
+      - group "User - ALT+U":
+        - list:
+          - listitem:
+            - button ""
+      - group "Help and Information - ALT+I":
+        - list:
+          - listitem:
+            - button ""
+  - navigation:
+    - button "Menu":
+      - img
+    - heading "Synonym Rules" [level=1]
+    - link "":
+      - /url: /netreveal/screen/view.do?secure=7rySYZuZCzv-iBIcilg8ybeQB1zuATjYJ2ymTsdD_QAVjB967c6htIm8AjHoSRtDpHOyOpOZEtMNpMbjOE-pl63tln-ZDxqsh0EO3Wx-BNYfKQ-P67GuK315W2H-HoIVzb_psd_hmi7lj_c0bkf0rvBIUMPyXPpHxAhOa_gYbVhy9TZYFXSACWcur6HTSWX0pqgTUTBC1muwyBFshzcWFfCLZxoeqeDh8SzcOqi-uvOGgHkT1sQ23Y62WpnGwDVpvxUsl2JSdDQbdQ0QwmZjfoh5BaPbBwcmPoBgWGp2b1iTQZaDMUuY-_kES5hRWPEca9S8Y3PB3nkyoYfaaNc6WjRzv8nd6ghGuB74cbx2BcaKGAc1R_Qo9HW_hpwxPv45GsP1bPUCW2V_YEFs-FjSzKbbADnv8v9imDe-zsAaMK1toyrehTl9LO9Bk_dIjwP3asIZvklnvJPdhGvwcNUMjevvye0Y0uesKbHEJyzzOlDJePmE4fMQMICJEKwiyhirCJXybc_BS0JKioCQ3SZy7YcLlqEgrIW4HWWtyy7DUpevFQBCmbNT_sgZQxFcquMKL2Qvk5_IaWKjpJbDvovcFZkqCIE2FVSBYcBltOTFtrCdzxVy_gmXbO8A3fDcgEvket-N-cz83H2x5JGJS21O5lAFwapO5OWQQIMRpfVJPnWIlMKBwhqkJpYiBzNVUb6HdlLWTLFg7yfxQz-8Lah48JIolzoCNrASiJYQnF2xge7YarXE2VuK8yr_bXcgxx2DicSO4We-RPYxV7gUFerPKP1atdIFTijE1NsuTFPad_zFfLAZBy3CePkz46Oc5l1XjehMk-XMhJl-1iZleewG4G17w5x9Bz4cRGCYu7Z82gw81jxxEZa09BJFpeoQVryVv_TU2iXKKgU3_3VN4EKOtngJ6EWlvScseuNiaZ9eY9NBP19v9cjFcUTwM-bUh87pE9ORf-g6gLD6CEcjCfo9vTE5AQpQUt4gvgPIJ2K2s14t7B30uCPoA6BRmfCzrKHYKI6jmZcupisH4HuQ3FCNpAWoHA2TjNgMS9xEjnxhsGOY9DyeIY0da7-BO43wfj_j7Uv8OXkrwQOuMJZWVJpD3ex1Z4wtOOgdUBEUOUyGczEGfF_WVDHefM2TqwI39VtdX4Z932k7hqdZW3uXOV1RQNytfWZj3bwb1xT1XuBDFa328Q87gC20CIDMXjOVwU77gbTGuz-vylF3kFR5lKUzXllYjq8ElPiy9sdYWvC1ZdCDHtDugQuJ_nq3DU3p9gPYIkRMiw039DAvW2wq-wjnll99TCshtf_pW99hS0ZWoRRODkA3cfrB4xfOL5pvABIOeq69YDJ-d4_tqiWw9CeINPXuG8Xjvub5D2SuW5CG0Ua7YVt-D1TPnjUPWHlKj7zfUK51YmEIRhLg7su-I0wncSUS21uJOdqN8fE9nMKUv_Ykxt2cjCXIppe1nfu7XpcJHT8Rdt0LvwBcpFJXRnuVVO2UGGZcUrDRKu2B7LohzbQFNk5-qYI6A1S_k_I096q2HYKD8fwCx-zIO4UToiMdNZzg3WdMEkN_4ESawHBguwlH-v04thHqrwX--V3dLITxVg**
+    - link "":
+      - /url: /netreveal/screen/view.do?secure=go7KWwVswMi28S-iLlKt0IrvqxaaLUGBB3BhF_v8X9h5ZVOzyLLowFlMZjXnkFbUD4WNt_81xOVCYYHfrMTdAKNw7ut0wGmp7SygwaFE2LEhTUEXLkru
+    - list:
+      - listitem:
+        - button ""
+- img "Debug"
+- button "Synonym Rules Manager Synonym Rules Manager":
+  - img "Synonym Rules Manager"
+  - text: Synonym Rules Manager
+- button "Import Synonyms Import Synonyms":
+  - img "Import Synonyms"
+  - text: Import Synonyms
+- button "Export Synonyms Export Synonyms":
+  - img "Export Synonyms"
+  - text: Export Synonyms
+- button "Lock Configuration":
+  - img "Lock Configuration"
+- button "Reload Synonym Rules Reload Synonym Rules":
+  - img "Reload Synonym Rules"
+  - text: Reload Synonym Rules
+- main:
+  - rowgroup:
+    - row "Minimise Synonym Rule Sets Add Name Descending Description Orgunit Domain Edit Remove Weighted words rule set Weighted words rule set Shared WLM Edit Spanish nickname rule set Spanish nickname rule set Shared WLM Edit Russian nickname rule set Russian nickname rule set Shared WLM Edit RulesetTest RulesetTest Description Shared Transaction Filtering Edit Ruleset2 Ruleset2 Shared Transaction Filtering Edit":
+      - cell "Minimise Synonym Rule Sets Add Name Descending Description Orgunit Domain Edit Remove Weighted words rule set Weighted words rule set Shared WLM Edit Spanish nickname rule set Spanish nickname rule set Shared WLM Edit Russian nickname rule set Russian nickname rule set Shared WLM Edit RulesetTest RulesetTest Description Shared Transaction Filtering Edit Ruleset2 Ruleset2 Shared Transaction Filtering Edit":
+        - button "Minimise"
+        - list:
+          - listitem:
+            - heading "Synonym Rule Sets" [level=3]:
+              - link "Synonym Rule Sets":
+                - /url: screen/view.do?screenId=1679&secure=tRDlJl1ypmlCG3d2BX4PJBLDUQFLaLGNa_tw7el78aPyY7X0_M7qfm4HyCxFLmcOxK_ZPQoO5z77HmvDxUxcA4EG61Fk3Fibp988ddRlddOK-aTZnoiklcaNg9gegCiGGuKSFx8tP5VmCIzkJYYAVycMO8HxTTte-g**
+        - button "Add":
+          - img "Add"
+        - table:
+          - rowgroup:
+            - row "Name Descending Description Orgunit Domain Edit Remove":
+              - columnheader "Name Descending":
+                - text: Name
+                - img "Descending"
+              - columnheader "Description"
+              - columnheader "Orgunit"
+              - columnheader "Domain"
+              - columnheader "Edit"
+              - columnheader "Remove"
+          - rowgroup:
+            - row "Weighted words rule set Weighted words rule set Shared WLM Edit":
+              - cell "Weighted words rule set":
+                - link "Weighted words rule set":
+                  - /url: /netreveal/screen/view.do?secure=h2VYgVR5kzc6iCqn11ZyA5RSyioHXq0VOEZ5w5Mcx_lkgTr6dZqCSvTwIGNdvggxnoVO5SSwkKQ87fwQVf-6tuYTO4gidzigFYTJ6EffKlr9Zo-XWd3OIc37KI_oT0_eQHhAZKDucomERJbl5gGqJsCLAZKTyRuaSzT9Udx-AsZg2ooPYn80vH7gUOu7ZYOqYu3Ef4AxH4I9SKekYLuc0pGUiSidCAhgQmm5Ual2PrKblXtm4A5Ccr4zzt1cyUm3S60ZWN8PdYf5niSZiHMw7obc5WfGJzYiqXEXCiG87oVd_4T-r8hVehOCdo4IGEviGrk-UC33YiAWvJ1Gf1cZeaxPoZYfIqL-sfy193YhMVHpaSQ3lCdGmKxK9n9rgyH0VLVh2eOp_5Zx8p5J7uOa1ddWohL5HDgidSKSpWVU9AjWROg_Dr0CuvRVL9pQLoS_RHKYJ2yqIN_oGFRhuIGR-VHscVZOCNjIZrsEj-tLSLqTbK303hIJgu5A9kGF8dAGbFxiykTqaUYqm_wIifL7UHY4FS8_nYDJcI8KQ_XJ4GN0xiYh65qtNUqlGzFzUMWmEhhCkcK22BqEolv7kgVDg8lPFu1yjXZkKL6z-bbzMVDwukfMUHR5wuLtU5ESYJVuBUAkEqF5WnsPwpS4JowOfHC8S4WN7GC0F_Ul6LAE
+              - cell "Weighted words rule set"
+              - cell "Shared"
+              - cell "WLM"
+              - cell "Edit":
+                - img "Edit"
+              - cell
+            - row "Spanish nickname rule set Spanish nickname rule set Shared WLM Edit":
+              - cell "Spanish nickname rule set":
+                - link "Spanish nickname rule set":
+                  - /url: /netreveal/screen/view.do?secure=7Sdk0auy23NGAd7_xbkjC4QCvCaj3Qyitrf8xEJ7vCH8NiyPK0WKyMIls8SCPeQeKBSQn3BWvjnkJV1fHxb-Mc3UB22yzM5i1kYyiAa5PjWICm8pgEOgJV0japikozll5KVvG1vyHx2FnIfYvF-ybH8e09kvVAvT0VIIbgcmf__BXPo50_AZXt_C72lkCUzRTwyOvDx6V4QXJA2P5seuhtlPPeJQW9eftle62IW0Zc0ZE7po151BZr59FyEf-lvATA6j4CvQtC9jvcMLcXlsvgPPGNxZTNftJnGzN2Dc34BFspN1TUx0Ns_eZLHEpTUX_icG5pijiMIj6UdoHMPA-Wc7yC8eoR_ifXG5S_lWiMarhxIlznoT6MFZr19Jo6S8DPnD6VUf5tSyMkwbwSz4XXfOg4NzvNjBjRKkJgYwlTCo0EpUxfTcMPrdSgWJb2NUWzn6nCya1UbKkK5Ly107xYRm94pBcfA58uUaCvVqojiiaZbVqZOJ_SQo3fiHrIXXiiTlL87OGbzA1eB4OUfsB3NA5Yiztl-hcNVzm6Ljm51U_6_DpTjoAlsMUirA27SPh6502FvRNLF1PZDlaxAZj2NYwqdDl6HenHjeYnkp_m73XM3VMkKAof58calxI5oRfcWQ9t6DAO02BK2Km9FUxGdywm8q4x_tF19bwkBpRP-C-Q**
+              - cell "Spanish nickname rule set"
+              - cell "Shared"
+              - cell "WLM"
+              - cell "Edit":
+                - img "Edit"
+              - cell
+            - row "Russian nickname rule set Russian nickname rule set Shared WLM Edit":
+              - cell "Russian nickname rule set":
+                - link "Russian nickname rule set":
+                  - /url: /netreveal/screen/view.do?secure=Qm3r_RNgaRiTP7Hr5RBJwOxG2OvGYNV8phWNDus2SNA0e1pWlLJV28lCTS60eNLuqfqOfvI1TgFUorxNUMyjHzGhEIXrUVDHxIBREku05NP1-GUL1A_tkyRPwPAqUTpv8ge0TyJ42Q4n_tpbLpu740rdVHjYS-wT1qC1JijD39i2aUaz6vHYeDcOYtYZgA0P80Tq_KZQY_8-PfqEWz3ysRAWd8W35zi83y7CXVN_o6CQ5_4kufxPzqnTdnxVhrOuybR60Jj3xx9wf0e-jZz3P5hlgPPsl1IpSznrxBeW_88pDBYUnvDWoETQ6vp7F233QXpbD1OB4I1HDXXH9OFlEYStrWX-6ckBsEPyx8qtqZut6P7nNdozHYdTJXbXP9GjQ3gMXLXYBEirEI43ujZSnCW92A0G2Y7TwnaRVzha3JSCND2V-eQH1dqGsBOuMUiazCy3g2LizYJvqplALVjN-16bH7FH4LRQfwsNfzUVHy7NBKgzfA_CrOfdq1h6TdlD2qgsv7AAs9zelLvrFILRV0xXFyfKu2jw85SCO40A_rg15Zn1KFb8aUN4T2eP1M8KRzCL6_Jv0BYGS4m5pzWJzMCGIrNuyjVzWysvkUqm2aM-AfDaSWIOcZmm-j8CPf0xudZHH7r6uPFsst7ny7JtQ3eMiZ0uXbPRbCJvqui7fx96ng**
+              - cell "Russian nickname rule set"
+              - cell "Shared"
+              - cell "WLM"
+              - cell "Edit":
+                - img "Edit"
+              - cell
+            - row "RulesetTest RulesetTest Description Shared Transaction Filtering Edit":
+              - cell "RulesetTest":
+                - link "RulesetTest":
+                  - /url: /netreveal/screen/view.do?secure=nJb_whGzLn6_ZFPnCyF7H6YmWG-iFQJSMLeVFKo6WWAqf499XG2tAhM-gFMduy4Mrx35nBoaN9nlvClyj2wI7-iL_eJUThpN7ELqgfgOohZK_mBCP3VTgM1Ju80JX7YBdxAySir40mi3L4TRjzwan4FkC8x4anHzPwxWNKHRFBjzNyQ1AteUTrP4NDiqjnOevuPQYSX5QHOgpO_ToOR6RZbZumLKqaHERdLNPr7JWouvP-tDbVvb8cxdvFjNUu2Mns0zXK-qDP-y00BgJNoYU_3muqGtsv9Ya4goqbu5Vq31jWNxB60n91KbIxEogNbiGR8Ux8kVKTkMGq-uy40UdX61L4r3XqTVxA-y6IC7G3TnwJ4vxnVlLQTkfBMp8IRAgTegandqDGzHB1tbENbglT8XrNE7gebftnm0vj1la7JTl8NXeU9v8SGdSrXCW8rwSFJath7bzEPe5nP1kFbtHP4ZY-1mHf_UGiw1MdQoaQVBsuQL0IocaXotGkwFC6WUQfAhhb3oCSKbBHDRE005gNwLMnmV_I4Oy9Mxm7Qg6H2KbFFbt2dD1HES8jUDmRoIuLaqyn5gEMOAVqy12_1ZrdK4VTftlhk5m60ceTC_EAll2YrIFEocqXdt3JeoR1qXbzrj1_-5xGmyh-TzRMBlLiAhvq7tJlU2tF_H-_NOjJ5mHKSN
+              - cell "RulesetTest Description"
+              - cell "Shared"
+              - cell "Transaction Filtering"
+              - cell "Edit":
+                - img "Edit"
+              - cell
+            - row "Ruleset2 Ruleset2 Shared Transaction Filtering Edit":
+              - cell "Ruleset2":
+                - link "Ruleset2":
+                  - /url: /netreveal/screen/view.do?secure=lHpPDKgd9xIUkPPXRVp1gQTUI5RbEIvbhGLs85v21VGiY50echsE7MouGpReFZcqObBDu0LKFHrGKe-e8zOlFyzuOfZqV-rxg5w58nV2foom5Rwy4HdkDsfHwqx2tg_A2ziFlqfXY-co3K7V89RRpnZsCWub9fdiA3PoDzVIfrrvArxbp6YbMqXgIDXJZRdX32LZbi6j6ZGO-19KqK6-1SJGQcX1rdfN0549_YuZjgxNoY34bIfCnO6y4opMpz4FAwsdzkj6Zr7RG9PkLv3THrS8_z0dWsAIERuUgWyZkg8enA4pI35jCjCc1OMzFpi0GyoF8WsnpSiBXPe5XgzrAP0eQgRi-HkUANHHGz6qevT6M64ZB4KPrYQCRC5ORrdyQvL6FhMDeq-A6l5nd9I2D_1cOO--NyjicNzs2ur9O1b29f_nlUnN5VcA-A5gaGCExfgdQF7ecdCzKRGLGpSxWmdFb-QXobdbeFWnN5i7H9S50nl53gdLLcyCBeSamrzegNVuUroVdA1IdWYjp2OCRNZBFeTNJRtThSWVfpVVHt6MQqy0FQcH986W3DDesek1Jt8w1b4Bb6_8UWF3NNAWoPfzaLRCkZnaHLxX_4RQPT-c2fVxsgvK0JTqaCg8RV5wioNqTZB06t53LGtmf0TLYHOl
+              - cell "Ruleset2"
+              - cell "Shared"
+              - cell "Transaction Filtering"
+              - cell "Edit":
+                - img "Edit"
+              - cell
+        - group: 1 2 
+    - row:
+      - cell:
+        - button "Minimise"
+        - list:
+          - listitem:
+            - heading "Synonym Rules for Rule Set Weighted words rule set" [level=3]:
+              - link "Synonym Rules for Rule Set Weighted words rule set":
+                - /url: screen/view.do?screenId=1679&secure=fCPDKl2BJ-0K4o5RXcTtzoJrlef8QFT_5NqP4ot2c6jJeOSy9GTICOdHyraSj20MfpF8ruWLIBw3G3qraryTRtD06IT65KnBuzCMm2_nGX3kYr7VT38MsaiZuu5mEadYrYD488Hti8pPgJXWuLmIQ0Vsy7bImd6h9Q**
+        - button "Remove Rules":
+          - img "Remove Rules"
+        - button "Link Existing Rule":
+          - img "Link Existing Rule"
+        - button "Add Rule":
+          - img "Add Rule"
+        - text: "View: Default View    "
+        - table:
+          - rowgroup:
+            - row:
+              - cell
+              - cell
+              - cell:
+                - textbox "Name"
+              - cell:
+                - textbox "Primary Word"
+              - cell:
+                - textbox "Description"
+              - cell:
+                - textbox "Substitute Length From"
+                - textbox "Substitute Length To"
+              - cell:
+                - textbox "Weight From"
+                - textbox "Weight To"
+              - cell:
+                - textbox "Enabled"
+              - cell:
+                - textbox "Last Updated By"
+              - cell:
+                - textbox "Last Updated On From"
+                - textbox "Last Updated On To"
+              - cell:
+                - textbox "Unlink"
+            - 'row "Select All Name: activate to sort column descending Primary Word: activate to sort column ascending Description: activate to sort column ascending Substitute Length: activate to sort column ascending Weight: activate to sort column ascending Enabled: activate to sort column ascending Last Updated By: activate to sort column ascending Last Updated On: activate to sort column ascending Unlink"':
+              - cell "Select All":
+                - checkbox "Select All"
+                - text: Select All
+              - cell
+              - 'cell "Name: activate to sort column descending"': Name 
+              - 'cell "Primary Word: activate to sort column ascending"': Primary Word
+              - 'cell "Description: activate to sort column ascending"': Description
+              - 'cell "Substitute Length: activate to sort column ascending"': Substitute Length
+              - 'cell "Weight: activate to sort column ascending"': Weight
+              - 'cell "Enabled: activate to sort column ascending"': Enabled
+              - 'cell "Last Updated By: activate to sort column ascending"': Last Updated By
+              - 'cell "Last Updated On: activate to sort column ascending"': Last Updated On
+              - cell "Unlink"
+          - rowgroup:
+            - row "Select Row administrative rule administrative administrative rule 3 0.21 Y 15/11/2024 Unlink":
+              - cell "Select Row":
+                - checkbox "Select Row"
+                - text: Select Row
+              - cell
+              - cell "administrative rule":
+                - link "administrative rule":
+                  - /url: /netreveal/screen/view.do?secure=6ZggHBliKdYEbArIjLJeDf0EzhcUAgYJHxvrwY0s2xYbY-KaAxynUO7gqeZcTfhIPHVMj4xfq9Kl9TX_7scApGKh-dHASjOG9jezna4uRbUGetKtz8cWApmdycGrb2ftGiUyHVTLMb9HQsBENGbhP0gbQF918aQMReN-8WxAXakcKa3INWDjM3SJaD1sXqdW_OHQQyUuRcsUWSlpYIWbUrV4orIFfccfv19q105GD_f-bxB57JtDnpeh7YYNzD4VSkdJHXDtQDLuANaZKUNzM7LoWwAVLdr-61M9FG_4Pi4b092LvDOVLCS4D71-CR2BREXoCePDm9D5SFzfSnvCJZjAbmDenwXAr7bQQlnO_wjcbg1wD9O-3PXr_3PcFdWJp9rHvvVKV3gVseWgbCWA8zk8GxkCTS_JABqL0WHrHIndXY0a8vRUVJGczWSOMx_889DVoxLuS9c9NZ-0xjtYt_7pzI842dh6ryH9VbpDyJ0q0RP2GaUqPwLPm5FVHUFHDaaN4xfwkPnVYm2I9A2DoUxRPlTb5FQkd8mi67EFAXSqjbQD93MOLiVTTEDhuwje8hMvu4eQD06n2Nk8yQMk5eHzD_IT56gIbOIC-GWdhwH7wkhmDZlGeYJ-gm9MqQIElSK18xU39GE55cxF2k_TzgbGNZTcc1hl03Tz8bYzI8gp55EYFh6uZSxwIix_wJlIgOdl7fsv20VWRQMXIZuUs3ZG_hazyVoOFK8mhWGR9mgx-ckFelvlGzZau13bPjN9Na12Y9-tRNhCYOJB47VsBWeZ8KekC5BUb_bnn_ZbJaK9nDcBkP7Xaw5AxJ26bU9yHaQt4H9LtWIikSF0_YE_RTeaRPgP9vuuFecA-QT-b6wb3wz6TSN8cX2kRDA-uAP6EmD1q9B88g**
+              - cell "administrative"
+              - cell "administrative rule"
+              - cell "3"
+              - cell "0.21"
+              - cell "Y"
+              - cell
+              - cell "15/11/2024"
+              - cell "Unlink":
+                - img "Unlink"
+            - row "Select Row agency rule agency agency rule 3.7 0.62 Y 26/09/2023 Unlink":
+              - cell "Select Row":
+                - checkbox "Select Row"
+                - text: Select Row
+              - cell
+              - cell "agency rule":
+                - link "agency rule":
+                  - /url: /netreveal/screen/view.do?secure=w_KxUiEeCVdYJt225L58WOQRRo3UZQBGbw7uEgFmeeeOH-0gcAyjqVlQGxYmXeoP5xcsY717941d1iO6u5RLu7sdb6XRgX9RRWotGEwxiFKt7v-y_zYL0SpRdDyDyl28s9d47W6YmmGmriTIZGm26dg2EGfZucXXqNxtp3siUkwQYdPp5XEYi7TdVa8it9JRQNG1gSZ-820ekJ73LWS3_qFufnP7wyAUK9uFdY_W5aT1w8VceexngNn9K7q06RM77j8vShqWbiwLB5vYwbge8cUJqMxuV8eL8_gYYdsp0IYrwgbFXKTfbquoWn8zX9D8JdmwOnwy59Oc-El6bA6AP8eZs5HWbowm-uxHZGEMAoFNaKSLo6f5tBt0K8_X0JTLn9gfwdRv7lTPiAN5vZhw8yvfUST7WXSIwS5uriOjvOpsWz6WIBX7XMSommN_M89xrI86JdnmH04RUCgqzZ4QfmlVHZIkdwSDcZ7VdX-yJ6K8xpcmDXK9PHI94yPWpZ2C_7Tfq-DIt7kpqZeEXGrIdTR8KgbEIKLEBy_8-JVDBPzhPc2KXjyMkq88Ivaynplhs7ZY0KhO4FAAp2kjuqJQ6pgagSKf1NJi9ZNgah15N1XI6VkE4DPgXGgyq_SFOmUSzsbl8L0riaq5GvKZD7lgr3IQHh3VwVLUMr-cZmac24yHHQNy4tv48hmPO4PT9MjI172pZcNe3Us84TURMyw1eYqn7dtrZUIL0xvakWBasZZCKNpOZOkWdsnUJRaJJVojib4Qo0L2fg1I4fdbbtLMMzJnypKOJD_JYlNl_56pUNvG3ZDoqxRQUyohdXpzqOJeZO_fOuYCn8_ffITphI00fn4MeCM5SxACuh6lErEszUvl
+              - cell "agency"
+              - cell "agency rule"
+              - cell "3.7"
+              - cell "0.62"
+              - cell "Y"
+              - cell
+              - cell "26/09/2023"
+              - cell "Unlink":
+                - img "Unlink"
+            - row "Select Row agricultural rule agricultural agricultural rule 6 0.5 Y 15/11/2024 Unlink":
+              - cell "Select Row":
+                - checkbox "Select Row"
+                - text: Select Row
+              - cell
+              - cell "agricultural rule":
+                - link "agricultural rule":
+                  - /url: /netreveal/screen/view.do?secure=ItkMMl97DAL0T3mJVWjnj9U4tTv_iFoxD2qGzbhPUZwZkda47tOxKZqHBTSJlL5y8Zm9fkimKifZPrFIriYAnkP2qseASsOokj1pJ2foCOVQ8ZgUYf2JkBkfR9JPRCQjsi84s9PW43GcSfobHrOXOdMTapj4n-oK7-2ysXs6T9DnSRnLREVcun5aPfb9_cCCPSQHU6Hm4IBpffFkQqz-ksHGZSOFI2qoqfn8m_T1PHujbvicibCKVZ6XHNE3TJPDG3O1VceDhVDHMja17LNrXa19UIJ6z_nJ6gL2xNbmh7mLRbcSTt0lZMUDLFUdSlghkOYhq6EiG2gLWeRh0mHTDTsfC02CqnRdaopkVt2kSehWIWINfYFtcrx1BZ4gB31bmUvTOHSgXpxspj79tkdV32HwwaQTDLgBaduVAaVsXoxZ4Tbh58YloS6DKQTPVCDyV1c9Vc9hEEQMQHyi0YlZ_8kB_pcVqVW_sgTQ0f9Iekg8OwNcELzPZor3PZA60yKRC0VU-kh5SMpHZXvEjlzoSYaeQBiY9roYod0aLSkpt1cW22gM4DIjacW6XOo1yE9kmIBCR-Zxq0ShIa-yl1ltbekqKwpQyesRxcMmBrpqYtZRpLOCSShC2ubAuUQReQH96uYvxNjnXbKzKmo4tbWP1cqx6c3jvTy_-7Fk9loIi_jk0--U0gjYcB1JqUDV6pWgjZ7pF7tFQ5l9sQwTR-Lbltm6JYLHNgM-q9255JkLz6E9VEJJ3-E0_TbR6OYaLn9UbKewXoKG6KIEKaj7huSL-gURJipqxfO4v2WLWTySke0RTn8u2PMiZAQqtWDOe4uWwRe03koCnWE2bXZuu5VVDmCpE-nTQ_5qWLUh8RkvVWhZTl5gDWcsgAHvZtln6N6b
+              - cell "agricultural"
+              - cell "agricultural rule"
+              - cell "6"
+              - cell "0.5"
+              - cell "Y"
+              - cell
+              - cell "15/11/2024"
+              - cell "Unlink":
+                - img "Unlink"
+            - row "Select Row aktsionernoe rule aktsionernoe aktsionernoe rule 2 0.17 Y 26/09/2023 Unlink":
+              - cell "Select Row":
+                - checkbox "Select Row"
+                - text: Select Row
+              - cell
+              - cell "aktsionernoe rule":
+                - link "aktsionernoe rule":
+                  - /url: /netreveal/screen/view.do?secure=uwgoeUcW0Y3Poze9sSaphTKANP6pDx6gapf-UBzVn_ACXMMdZGZbKYikPYKDZi5K-WXLhsFbKhWjXvD4Ws-qtPmuMGatUJp0vwkf37n9HbpYvHKL8l1n7zPrRTuRKyXPfXvSYTweICKcCVTk9syUukcdWBbVqziRX7Rm_7YitSm98j84YntpdjQ0Hj2S1FZkee7gCoWPpm8Zmf4ZKhuG6nhRZgSMozR8ghRciOLTncv79vO35ty6B_YZEjXyV-En11aHouxjIXKqXD6cZANIPaO6m-c-pdP5azRfLt1GwrPKpneuwZGK5KS6G3mBiiIbJXCCh8LfZuf987yMBxk4Dt4-X6OmFMCGJWsh65biZlsxzelGeLxzBvsTO5u7ujOfLrt3hjubW-k5GSqWuP5bXUayymQLCn-KWYXH1rErifa8w_2m4Hokc7NV-QHK2dRbgsgykdsFgSYYZB-DVVdIs5REvfiSmYxsu0TCLTB4xnO5374j2yVWl9lCRAJvxl_CCyBW5kLOxh5Q4diHCfwV-hOIw_YiTTyNZl7v1aEWpVhS_MbztIXTPCZcMN9YoDnjp3EOQF4MAKadYM6nF9K8TpIUtYp3Q4mw8OLo2RyxU9V4rYqO24QZUiWMmoLPtnObBiAXwu16bhCUo_vlEaEzcucdF7uvwhhQvqqXk_D7rcGUHmqIVLdIcC_klJLU0iIyGUb3kzCEpzGEUGj6i8TH_Hec65zB1FiRJQDg0eyQh3JG--XE8YdRAr3avgJYcJJU1qRN9ghDdHefsJG0b5tJC3O8yNMjx2b43RSlWPcR1LDWQZGCVUFZIdhRb6WjzcGXL3f8uHKf1aPK9S-zvuOdHxV8FXo6m6YkOnmz6HxTeBXlxc33xiNIdIIMpjofGADHeg**
+              - cell "aktsionernoe"
+              - cell "aktsionernoe rule"
+              - cell "2"
+              - cell "0.17"
+              - cell "Y"
+              - cell
+              - cell "26/09/2023"
+              - cell "Unlink":
+                - img "Unlink"
+            - row "Select Row aktsionernoye rule aktsionernoye aktsionernoye rule 2 0.15 Y 26/09/2023 Unlink":
+              - cell "Select Row":
+                - checkbox "Select Row"
+                - text: Select Row
+              - cell
+              - cell "aktsionernoye rule":
+                - link "aktsionernoye rule":
+                  - /url: /netreveal/screen/view.do?secure=PLvIuCRmLBvRbw9moWztgfvUkFv7icEFzRRP6TqCTuRovol7cyTlkFPpmhfaBFZGTqXzN2l-_ItVNweyaIGPa9Iolfp6zbd5QbVgA044sMtu5SuBVxdUKpAZIkKYWMzLx0uspWDJT6E0FbaztklhZyTN3KNF7--vw-YNbiSzQDXSkjh3MtC6XV2WXM8Z7ZxjYEL_iyV0GVvrpmoNf-8aCV4TPNjCyi7x6Jj2Z2WxirCJYAjiQ9i1Uu4vlEMvT3TzYxO6ZUjl5OtanjpvzYrIPMTcdwAP4S3XfzLGQ3G2pk0rWlC3fBbc3fWjqt3FoZrTghmHpZ6n4w_V_T9SFeQ2Z_fF21PFkWTH6efo62OyloQIpAsupOolNh6lL4rNE_AyskI_2nTKGlupDqsx-Mm9ARJn1sE1uqc19ZTNgTBtXcVl9YRemwvLrkAc3BuOMF0QcXz2UJZCXF6mgjJ6TIQxevmYF2KkzlboTO_xlJW00hOk0sE0I3QxYg3JueajfVbPNZkY8iI_TXt1-tlKStc4roK2Ty0rwgb63glTHSGzq4YpbCkglR5ZfztqizSfgnFSE8X0OmyVNt_nevdrhu_0aRJ3-_3RZhdscCq35gEiz7Mepfjcks6-WpcwkEUghSHVaxbyFo8A9HmAZonyBRJ27fjn6K2Gl3xUEVDUEReBw98_aWPc_ndwHN92YTN1kDTfAi9kCsftUfOjUTa3Ds52mlefJbjcvywOqAt0wP_rEzGk6WgZIkRGZkOaA3nSaDtVv7GguKtsx80amicvXwT3jMiGLw0NwahLc_6t3tmhjOvSlaldMfhbnajEPifemN3THDHc8uDQswY9lE8t9TP_haeIGRa85sPamm_VfXAgAEZnJVbeNfBRJtorwoSOqfJGfKpOUQ**
+              - cell "aktsionernoye"
+              - cell "aktsionernoye rule"
+              - cell "2"
+              - cell "0.15"
+              - cell "Y"
+              - cell
+              - cell "26/09/2023"
+              - cell "Unlink":
+                - img "Unlink"
+        - status: Showing 1 to 5 records
+        - text: Go To Previous Page 1 2 3 4 5 6 Go To Next Page
+      - cell:
+        - button "Minimise"
+        - list:
+          - listitem:
+            - heading "Linked watch list for Rule Set Weighted words rule set" [level=3]:
+              - link "Linked watch list for Rule Set Weighted words rule set":
+                - /url: screen/view.do?screenId=1679&secure=aDYBNyIEQCw0WJcao8ttStXlHxpxAiPbxklSNvn8o62siLyUl-4LlAUeV6vW7gmvdl9iUdin4K6resQSPjs9E4-LNrtvLlTgXarpp6h2BSK6FXr2d8ynvPkwkyWzv9qug5sKWHS5L_eZ5VGGMgIHvpikweZuzhEg6g**
+        - button "Add":
+          - img "Add"
+        - button "Rebuild Indexes"
+        - table:
+          - rowgroup:
+            - row "Select All List Name Ascending List Index Enabled Edit Remove":
+              - cell "Select All":
+                - checkbox "Select All"
+                - text: Select All
+              - columnheader "List Name Ascending":
+                - text: List Name
+                - img "Ascending"
+              - columnheader "List Index"
+              - columnheader "Enabled"
+              - columnheader "Edit"
+              - columnheader "Remove"
+          - rowgroup:
+            - row "Select Row DJ Applicable Sanctions Group EXTENDED_Name_DJ_ENT_App_Sanct_Full Y Edit Remove":
+              - cell "Select Row":
+                - checkbox "Select Row"
+                - text: Select Row
+              - cell "DJ Applicable Sanctions Group"
+              - cell "EXTENDED_Name_DJ_ENT_App_Sanct_Full"
+              - cell "Y"
+              - cell "Edit":
+                - img "Edit"
+              - cell "Remove":
+                - img "Remove"
+            - row "Select Row DJ Applicable Sanctions Group EXTENDED_Name_DJ_ENT_App_Sanct_Delta Y Edit Remove":
+              - cell "Select Row":
+                - checkbox "Select Row"
+                - text: Select Row
+              - cell "DJ Applicable Sanctions Group"
+              - cell "EXTENDED_Name_DJ_ENT_App_Sanct_Delta"
+              - cell "Y"
+              - cell "Edit":
+                - img "Edit"
+              - cell "Remove":
+                - img "Remove"
+            - row "Select Row EU list eu_name Y Edit Remove":
+              - cell "Select Row":
+                - checkbox "Select Row"
+                - text: Select Row
+              - cell "EU list"
+              - cell "eu_name"
+              - cell "Y"
+              - cell "Edit":
+                - img "Edit"
+              - cell "Remove":
+                - img "Remove"
+            - row "Select Row FACTIVA PFA EXTENDED_Name_DJ_ENT_SIE_Delta Y Edit Remove":
+              - cell "Select Row":
+                - checkbox "Select Row"
+                - text: Select Row
+              - cell "FACTIVA PFA"
+              - cell "EXTENDED_Name_DJ_ENT_SIE_Delta"
+              - cell "Y"
+              - cell "Edit":
+                - img "Edit"
+              - cell "Remove":
+                - img "Remove"
+            - row "Select Row FACTIVA PFA EXTENDED_Name_DJ_ENT_SIE_Full Y Edit Remove":
+              - cell "Select Row":
+                - checkbox "Select Row"
+                - text: Select Row
+              - cell "FACTIVA PFA"
+              - cell "EXTENDED_Name_DJ_ENT_SIE_Full"
+              - cell "Y"
+              - cell "Edit":
+                - img "Edit"
+              - cell "Remove":
+                - img "Remove"
+            - row "Select Row FinCEN 314a Business fincen_business_name Y Edit Remove":
+              - cell "Select Row":
+                - checkbox "Select Row"
+                - text: Select Row
+              - cell "FinCEN 314a Business"
+              - cell "fincen_business_name"
+              - cell "Y"
+              - cell "Edit":
+                - img "Edit"
+              - cell "Remove":
+                - img "Remove"
+            - row "Select Row FinCEN 314a Business fincen_business_dba_name Y Edit Remove":
+              - cell "Select Row":
+                - checkbox "Select Row"
+                - text: Select Row
+              - cell "FinCEN 314a Business"
+              - cell "fincen_business_dba_name"
+              - cell "Y"
+              - cell "Edit":
+                - img "Edit"
+              - cell "Remove":
+                - img "Remove"
+            - row "Select Row HM Treasury list hmtreasury_name Y Edit Remove":
+              - cell "Select Row":
+                - checkbox "Select Row"
+                - text: Select Row
+              - cell "HM Treasury list"
+              - cell "hmtreasury_name"
+              - cell "Y"
+              - cell "Edit":
+                - img "Edit"
+              - cell "Remove":
+                - img "Remove"
+            - row "Select Row OFAC list ofac_name Y Edit Remove":
+              - cell "Select Row":
+                - checkbox "Select Row"
+                - text: Select Row
+              - cell "OFAC list"
+              - cell "ofac_name"
+              - cell "Y"
+              - cell "Edit":
+                - img "Edit"
+              - cell "Remove":
+                - img "Remove"
+            - row "Select Row UN List un_name Y Edit Remove":
+              - cell "Select Row":
+                - checkbox "Select Row"
+                - text: Select Row
+              - cell "UN List"
+              - cell "un_name"
+              - cell "Y"
+              - cell "Edit":
+                - img "Edit"
+              - cell "Remove":
+                - img "Remove"
+            - row "Select Row WC APPLICABLE SANCTIONS GROUP EXTENDED_Name_WC_ENT_App_Sanct_Delta Y Edit Remove":
+              - cell "Select Row":
+                - checkbox "Select Row"
+                - text: Select Row
+              - cell "WC APPLICABLE SANCTIONS GROUP"
+              - cell "EXTENDED_Name_WC_ENT_App_Sanct_Delta"
+              - cell "Y"
+              - cell "Edit":
+                - img "Edit"
+              - cell "Remove":
+                - img "Remove"
+            - row "Select Row WC APPLICABLE SANCTIONS GROUP EXTENDED_Name_WC_ENT_App_Sanct_Full Y Edit Remove":
+              - cell "Select Row":
+                - checkbox "Select Row"
+                - text: Select Row
+              - cell "WC APPLICABLE SANCTIONS GROUP"
+              - cell "EXTENDED_Name_WC_ENT_App_Sanct_Full"
+              - cell "Y"
+              - cell "Edit":
+                - img "Edit"
+              - cell "Remove":
+                - img "Remove"
+            - row "Select Row WORLDCHECK EXTENDED_Name_WC_ENT_SIE_Full Y Edit Remove":
+              - cell "Select Row":
+                - checkbox "Select Row"
+                - text: Select Row
+              - cell "WORLDCHECK"
+              - cell "EXTENDED_Name_WC_ENT_SIE_Full"
+              - cell "Y"
+              - cell "Edit":
+                - img "Edit"
+              - cell "Remove":
+                - img "Remove"
+            - row "Select Row WORLDCHECK EXTENDED_Name_WC_ENT_SIE_Delta Y Edit Remove":
+              - cell "Select Row":
+                - checkbox "Select Row"
+                - text: Select Row
+              - cell "WORLDCHECK"
+              - cell "EXTENDED_Name_WC_ENT_SIE_Delta"
+              - cell "Y"
+              - cell "Edit":
+                - img "Edit"
+              - cell "Remove":
+                - img "Remove"
+    - row
+- text: SYSWLMPP_Synonym_Rules
+- region "Main navigation":
+  - navigation "Navigation":
+    - menu:
+      - menuitem "My Work"
+      - menuitem "Group Work"
+      - menuitem "Back Office"
+      - menuitem "Dashboards"
+      - menuitem "Administration"
+      - menuitem "Application Builder"
+      - menuitem "Workflow Configurator"
+      - menuitem "Watchlist Manager"
+      - menuitem "Scenario Manager"
+      - menuitem "Scenario Manager - CDD"
+      - menuitem "Scenario Manager - CDD Automated Alert Triage"
+      - menuitem "Scenario Manager - IETWLMTF"
+      - menuitem "Scenario Manager - IETWLMSP"
+      - menuitem "Services Manager"
+      - menuitem "Command And Control"
+      - menuitem "Compliance Simulation"
+```
