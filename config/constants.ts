@@ -33,6 +33,7 @@ export const NAVIGATION = {
 
 /**
  * Test data for assertions
+ * Used in initial simple WLM verification tests 
  */
 export const TEST_DATA = {
   RULE_SET_NAME: 'Weighted words rule set',
