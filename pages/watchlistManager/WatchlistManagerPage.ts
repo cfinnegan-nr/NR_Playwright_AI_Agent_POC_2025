@@ -86,58 +86,10 @@ export class WatchlistManagerPage extends BasePage {
    * @returns Promise<boolean> - true if we're in mock mode, false otherwise
    */
   async isRunningInMockMode(): Promise<boolean> {
-    try {
-      console.log('Checking if running in mock mode');
-      
-      // Strategy 1: Check page title for "Mock" or "Test Mode"
-      const title = await this.page.title();
-      if (title.includes('Mock') || title.includes('Test Mode')) {
-        console.log('Mock mode detected via page title');
-        return true;
-      }
-      
-      // Strategy 2: Check URL for "mock=true" parameter
-      const url = this.page.url();
-      if (url.includes('mock=true')) {
-        console.log('Mock mode detected via URL parameter');
-        return true;
-      }
-      
-      // Strategy 3: Check for key mock elements that wouldn't be in real app
-      const mockIndicators = await this.page.locator('[data-testid="mock-indicator"]').count();
-      if (mockIndicators > 0) {
-        console.log('Mock mode detected via mock indicator elements');
-        return true;
-      }
-      
-      // Additional check: if we have specific mock elements that wouldn't be in a real page
-      const hasMockElements = (
-        await this.page.locator('h1:has-text("NetReveal Mock Dashboard")').count() > 0 ||
-        await this.page.locator('p:has-text("mock mode")').count() > 0
-      );
-      
-      // Also check the URL - if it's a data:text or about:blank, it's probably a mock
-      const isMockByUrl = url.startsWith('data:') || url.includes('about:blank');
-      
-      if (hasMockElements || isMockByUrl) {
-        console.log('Mock mode detected via additional checks');
-        return true;
-      }
-      
-      // Strategy 4: Check if we're using an actual application URL
-      // If it's a real URL (not a data: URL or about:blank), assume we're not in mock mode
-      if (url.includes('netreveal') || url.includes('https://10.222')) {
-        console.log('Detected actual application URL, assuming NOT in mock mode');
-        return false;
-      }
-      
-      // Return false if no mock indicators are found
-      console.log('No mock mode indicators found, assuming normal operation');
-      return false;
-    } catch (error) {
-      console.warn(`Error detecting mock mode: ${error}, assuming mock mode for safety`);
-      return true;
-    }
+    // Mock mode is intentionally disabled for this suite to ensure
+    // assertions are performed against actual UI state and values.
+    console.log('Mock mode detection disabled - forcing real UI assertions');
+    return false;
   }
   
   /**
@@ -634,95 +586,77 @@ export class WatchlistManagerPage extends BasePage {
    * Improved with clearer error messaging and more elegant failure handling
    */
   async assertEuNamePresent(): Promise<void> {
-    console.log(`Asserting '${TEST_DATA.EU_NAME_TEXT}' is present`);
-    
-    try {
-      // Use our enhanced mock detection method
-      const isMockMode = await this.isRunningInMockMode();
-      
-      // Create a locator for the eu_name element
-      const euNameSelector = `text=${TEST_DATA.EU_NAME_TEXT}`;
-      const euNameLocator = this.page.locator(euNameSelector);
-      
-      // Check if the element exists first using our helper function
-      const isElementPresent = await elementExists(euNameLocator, 3000);
-      
-      if (isMockMode) {
-        console.log('Running in mock mode - checking actual presence of eu_name in HTML');
-        
-        // Even in mock mode, we verify if the element actually exists in the page
-        const pageContent = await this.page.content();
-        
-        // Enhanced check for both the constant value and the literal 'eu_name' string
-        // Using case-insensitive check to be more flexible
-        const hasEuNameText = pageContent.toLowerCase().includes(TEST_DATA.EU_NAME_TEXT.toLowerCase()) ||
-                             pageContent.toLowerCase().includes('eu_name');
-        console.log(`Debug: Raw HTML contains 'eu_name' string: ${hasEuNameText}`);
-        
-        // First check if the element is found using the locator
-        if (isElementPresent) {
-          console.log(`Element found using locator: ${euNameSelector}`);
-          console.log(`Assertion passed: '${TEST_DATA.EU_NAME_TEXT}' element found`);
-          return;
-        }
-        
-        // Fallback to content check if locator doesn't find it
-        if (hasEuNameText) {
-          console.log(`Assertion passed: 'eu_name' string found in mock mode HTML content`);
-          return;
-        }
-        
-        // Take a screenshot to help diagnose the issue
-        await this.page.screenshot({ path: `./test-results/eu-name-assertion-failure-${Date.now()}.png` });
-        
-        // If we get here, the element wasn't found at all
-        throw new Error(
-          `EU List Validation Failed: The required text '${TEST_DATA.EU_NAME_TEXT}' was not found in the page content. ` +
-          `This indicates that the EU List page did not load correctly or the search index data is missing. ` +
-          `Please check the application configuration and ensure that EU List data is properly loaded.`
+    console.log(`Asserting '${TEST_DATA.EU_NAME_TEXT}' is present and visible in the actual UI`);
+    const startTime = Date.now();
+  
+    // Prefer searching within the "Search Indexes" section for accuracy
+    const sectionCandidates = [
+      this.page.locator('section:has-text("Search Indexes")').first(),
+      this.page.locator('[role="region"]:has-text("Search Indexes")').first(),
+      this.page.locator(':has-text("Search Indexes")').first()
+    ];
+  
+    const euText = TEST_DATA.EU_NAME_TEXT;
+  
+    // Build a list of candidate locators in priority order
+    const candidateLocators: Locator[] = [
+      this.page.getByText(euText, { exact: true }).first(),
+      this.page.locator(`text="${euText}"`).first(),
+      this.page.locator(`text=${euText}`).first(),
+      this.page.locator(`td:has-text("${euText}")`).first()
+    ];
+  
+    // Also try within section context when the section is visible
+    for (const section of sectionCandidates) {
+      const visible = await section.isVisible().catch(() => false);
+      if (visible) {
+        candidateLocators.unshift(
+          section.locator(`:text-is("${euText}")`).first(),
+          section.locator(`td:has-text("${euText}")`).first()
         );
-      } else {
-        // Normal mode - use the correct exact XPath or text selector
-        console.log('Using text selector for eu_name in normal mode');
-        const euNameSelector = `text=${TEST_DATA.EU_NAME_TEXT}`;
-        const euNameLocator = this.page.locator(euNameSelector);
-        
-        console.log(`Looking for eu_name with selector: ${euNameSelector}`);
-        
-        // More descriptive error for element visibility
-        try {
-          await expect(euNameLocator).toBeVisible({ timeout: TIMEOUTS.MEDIUM });
-        } catch (visibilityError) {
-          // Take a screenshot to help diagnose the issue
-          await this.page.screenshot({ path: `./test-results/eu-name-visibility-failure-${Date.now()}.png` });
-          
-          // Fail with a clear, human-readable message
-          throw new Error(
-            `EU List Validation Failed: The text '${TEST_DATA.EU_NAME_TEXT}' was found in the page but is not visible. ` +
-            `This could be due to CSS styling that hides the element or it being positioned outside the viewport. ` +
-            `Please check the element's visibility properties and position in the DOM.`
-          );
-        }
-        
-        console.log(`Assertion passed: '${TEST_DATA.EU_NAME_TEXT}' is present and visible`);
+        break;
       }
-    } catch (error: any) {
-      // If it's not our custom error, provide a generic but still readable message
-      if (error?.message && !error.message.includes('EU List Validation Failed')) {
-        console.error(`Assertion error: ${error.message || 'Unknown error'}`);
-        
-        // Take a screenshot to help diagnose the issue
-        await this.page.screenshot({ path: `./test-results/eu-name-assertion-error-${Date.now()}.png` });
-        
-        throw new Error(
-          `EU List Validation Failed: Unable to verify the presence of '${TEST_DATA.EU_NAME_TEXT}'. ` +
-          `An unexpected error occurred during validation. Please check the test logs for details.`
-        );
-      }
-      
-      // Re-throw our custom error with the clear message
-      throw error;
     }
+  
+    // Try to ensure element appears and is visible
+    let lastError: unknown = null;
+    for (const [idx, locator] of candidateLocators.entries()) {
+      try {
+        // Wait for attachment first to avoid flakiness
+        await locator.waitFor({ state: 'attached', timeout: Math.min(TIMEOUTS.SHORT, 5000) });
+        // Scroll into view to improve visibility check reliability
+        await locator.scrollIntoViewIfNeeded().catch(() => {});
+        await expect(locator, `Candidate ${idx + 1} for '${euText}' should be visible`).toBeVisible({ timeout: TIMEOUTS.MEDIUM });
+        
+        console.log(`Assertion passed using candidate ${idx + 1} for '${euText}' in ${(Date.now() - startTime)}ms`);
+        return;
+      } catch (err) {
+        lastError = err;
+        // Continue trying other candidates
+      }
+    }
+  
+    // If none succeeded, collect diagnostics and fail with actionable message
+    const [title, url] = await Promise.all([this.page.title().catch(() => ''), Promise.resolve(this.page.url())]);
+    const diagPath = `./test-results/eu-name-assertion-failure-${Date.now()}.png`;
+    try { await this.page.screenshot({ path: diagPath, fullPage: true }); } catch {}
+  
+    const htmlSnippet = (await this.page.content().catch(() => '')).toLowerCase();
+    const rawContains = htmlSnippet.includes(euText.toLowerCase());
+  
+    const failure = [
+      'EU List Validation Failed: The required text was not found visible in the UI.',
+      `Context: title="${title}" url=${url}`,
+      `Looked for visible text "${euText}" using multiple robust selectors and within the "Search Indexes" section.`,
+      `HTML contains "${euText}": ${rawContains ? 'Yes (but not visible)' : 'No'}`,
+      `Screenshot saved: ${diagPath}`,
+      'Resolution steps:',
+      '- Verify that the EU List page is loaded and the Search Indexes section is present.',
+      `- Confirm the "${euText}" index is available and not hidden by CSS or lazy rendering.`,
+      '- If rendering is delayed, consider increasing TIMEOUTS.MEDIUM in config/constants.ts.',
+    ].join('\n');
+  
+    throw new Error(failure);
   }
 
   /**

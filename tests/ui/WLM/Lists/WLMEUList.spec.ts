@@ -506,7 +506,7 @@ test.describe('NetReveal Watchlist Manager EU List Tests', () => {
       
       try {
         // Use the page object method for consistent assertion handling
-        await watchlistManagerPage.assertEuNamePresent();
+        await performEnhancedEuNameAssertion(page);
         
         // Take screenshot of final state with visible eu_name
         await takeScreenshot(page, 'WLMEUList', 'eu-name-visible');
